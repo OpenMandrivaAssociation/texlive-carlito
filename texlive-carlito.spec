@@ -1,6 +1,6 @@
 Name:		texlive-carlito
 Version:	64624
-Release:	1
+Release:	2
 Summary:	Support for Carlito sans-serif fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/carlito

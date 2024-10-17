@@ -3,7 +3,7 @@ Version:	64624
 Release:	2
 Summary:	Support for Carlito sans-serif fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/carlito
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/carlito
 License:	ofl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/carlito.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/carlito.doc.r%{version}.tar.xz

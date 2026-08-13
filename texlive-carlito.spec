@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/carlito.r%{tl_re
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/carlito.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -20,3 +21,10 @@ the Carlito family of sans serif fonts, designed by Lukasz Dziedzic of
 the tyPoland foundry and adopted by Google for ChromeOS as a font-metric
 compatible replacement for Calibri.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from carlito:
+Map carlito.map
+TL_DROPIN_EOF
